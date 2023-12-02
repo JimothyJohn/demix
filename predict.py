@@ -103,14 +103,14 @@ class Predictor(BasePredictor):
         # merger.save_tracks(stem,"/tmp")
 
         if stem == "all":
-            with zipfile.ZipFile("tracks.zip", 'w') as zipf:
+            with zipfile.ZipFile("output.zip", 'w') as zipf:
                 for _, path in output.items():
                     if path is not None:
                         zipf.write(path)
         else:
             merged = merge_tracks(stem, output)
-            with zipfile.ZipFile("tracks.zip", 'w') as zipf:
+            with zipfile.ZipFile("output.zip", 'w') as zipf:
                 zipf.write(merged)
                 zipf.write(output[stem])
 
-        return Path("tracks.zip") 
+        return Path("output.zip") 

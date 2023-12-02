@@ -11,3 +11,5 @@ build:
     # this is not necessary but saving the models in the image will make the inference faster
     - mkdir -p /root/.cache/torch/hub/checkpoints/ && wget --output-document "/root/.cache/torch/hub/checkpoints/5c90dfd2-34c22ccb.th" "https://dl.fbaipublicfiles.com/demucs/hybrid_transformer/5c90dfd2-34c22ccb.th"
 predict: "predict.py:Predictor"
+
+image: "r8.im/jimothyjohn/demixing"
