@@ -1,10 +1,10 @@
 # demix
 
-An simplified, accelerated endpoint to separate music into separate tracks by source.
+A simplified, accelerated endpoint to separate music into separate tracks by source.
 
 # Acknowledgements
 
-This repository borrows almost exclusively from
+This repository borrows almost exclusively from:
 
 * [Alexandre Défossez et al. work on Hybrid Transformers for Music Source Separation](https://github.com/facebookresearch/demucs)
 
